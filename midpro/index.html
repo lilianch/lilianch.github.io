@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: ‘Noto Sans TC’, sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/assets/02.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/assets/11.jpg");
+    min-height: 1000px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/assets/12.jpg");
+    min-height: 800px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">一帶一路</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bullhorn"></i> 簡介</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> 影響</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-flag"></i> 台灣</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">簡介</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">影響</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">台灣</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity">一 <span class="w3-hide-small">帶</span> <span class="w3-hide-small">一 </span><span class="w3-hide-small">路</span></span>
+
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-32" id="about">
+    <h2 class="w3-center">簡介</h2>
+    <p class="w3-center"><em></em></p>
+    <h3>「一帶」：絲綢之路經濟帶</h3>
+    <h5>過去有張騫通西域，當時他所走過的這一段絲綢之路，就是中國現在西進的道路，也就是一帶。一帶的計畫中，中國規劃三條超級鐵路，直接貫通到歐亞大陸的各個角落。</h5>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h3>「一路」：21 世界海上絲綢之路</h3>
+    <h5>絲綢之路是商業繁榮的代名詞，在海上，中國也建立了它的絲綢之路。海上一路最主要有兩條航道，北經印度洋至歐洲，南至太平洋。</h5>
+
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <p></p>
+            <h2><i class="fa fa-calendar w3-margin-right"></i>發展</h2>
+            <br>
+            <img src="/assets/05.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width=273px height=420px>
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <h4>2013年</h4>
+            <p>
+                「一帶一路」是繼《中國夢》後，中國國家主席習近平在2013年9月和10月，利用出訪中亞和東南亞國家期間，提出共建「絲綢之路經濟帶」和「21世紀海上絲綢之路」的重大倡議。</p>
+            <h4>2015年</h4>
+            <p>
+                2015年3月中國國家發展和改革委會(發改委)、外交部、商務部發布《推動共建絲綢之路經濟帶和21世紀海上絲綢之路的願景與行動》正式將「一帶一路」（One Belt One Road）與籌設「亞洲基礎建設投資銀行」（AIIB，簡稱亞投行）成為中國國務院重要的政策。</p>
+            <h4>2017年</h4>
+            <p>
+                2017年5月在北京舉行「一帶一路」國際高峰論壇，邀請35國家，29國領導人代表蒞臨，會後宣稱涵蓋「政策溝通」、「設施聯通」、「貿易暢通」、「資金融通」、「民心相通」5大類，共計達成76大項、270多項成果清單 ，其代表性的項目就是印尼雅萬高鐵工程，以及中越聯合公報所宣稱的「兩廊一圈」 框架合作備忘錄。一向不關心「一帶一路」政策的美國、日本均派代表出席。</p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h2 class="w3-center">影響</h2>
+  <p class="w3-center"><em></em></p><br>
+<h3>中國主導的一帶一路計畫包含了 66 個國家，
+佔全球人口數的 66.9%、約佔全球 30%GDP 經濟規模。</h3>
+
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+</div>
+
+    
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <p></p>
+            <h2><i class="fa fa-flag w3-margin-right"></i>台灣的回應</h2>
+            <br>
+            <img src="/assets/06.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6  w3-padding-large">
+            <h3>2017年5月蔡英文受訪</h3>
+            <br>
+            <br>
+            <h4>
+                強調新南向政策與中國大陸推動的「一帶一路」完全不同。</h4>
+            <br>
+            <h4>「台灣擁有的是強大的民間企業及醫療、教育、人力資源開發、技術創新、農業、防災等各種軟實力，這些都不是金錢或政治力可以取代或阻擋的。」</h4>
+        
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+ 
+
+
+</body>
+</html>
