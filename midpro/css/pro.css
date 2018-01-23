@@ -361,7 +361,7 @@ a {
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    background-color: inherit;
+    background-color: #272727;
     text-align: center;
     cursor: pointer;
     white-space: nowrap
@@ -563,6 +563,7 @@ a {
 .w3-bar {
     width: 100%;
     overflow: hidden
+    
 }
 
 .w3-center .w3-bar {
